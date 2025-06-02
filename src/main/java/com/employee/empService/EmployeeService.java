@@ -44,5 +44,9 @@ public class EmployeeService {
 		// TODO Auto-generated method stub
 		return Ed.updateName(x,e); 
 	}
+	public String delete(int x) {
+		// TODO Auto-generated method stub
+		return Ed.delete(x);
+	}
 
 }

@@ -55,5 +55,9 @@ public class EmployeeController {
 	public String updateName(@PathVariable int x,@RequestBody Employee e) {
 		return Es.updateName(x,e); 
 	}
+	@DeleteMapping(value="/deleteById/{x}")
+	public String delete(@PathVariable int x) {
+		return Es.delete(x); 
+	}
 
 }

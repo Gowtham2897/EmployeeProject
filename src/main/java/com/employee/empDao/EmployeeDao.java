@@ -58,5 +58,10 @@ public class EmployeeDao {
 		Er.save(a);
 		return "Update Successfully";
 	}
+	public String delete(int x) {
+		// TODO Auto-generated method stub
+		Er.deleteById(x);
+		return "delete Successfully";
+	}
 
 }
