@@ -2,6 +2,8 @@ package com.employee.empDao;
 
 import java.util.List;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -62,6 +64,10 @@ public class EmployeeDao {
 		// TODO Auto-generated method stub
 		Er.deleteById(x);
 		return "delete Successfully";
+	}
+	public Page getEmployees(Pageable x) {
+		// TODO Auto-generated method stub
+		return Er.findAll(x);
 	}
 
 }

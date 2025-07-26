@@ -2,6 +2,8 @@ package com.employee.empService;
 
 import java.util.List;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -47,6 +49,10 @@ public class EmployeeService {
 	public String delete(int x) {
 		// TODO Auto-generated method stub
 		return Ed.delete(x);
+	}
+	public Page getEmployees(Pageable x) {
+		// TODO Auto-generated method stub
+		return Ed.getEmployees(x);
 	}
 
 }
